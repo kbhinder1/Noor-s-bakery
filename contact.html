@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Flavors&display=swap');
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <meta name="description" content="Discover the latest updates and promotions.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="validation.js"></script>
+</head>
+<body>
+    <header>
+        <img src="Noor's.png" alt="Banner">
+    </header>
+    
+    <main>
+        <section class="contact">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <span class="error-message" id="phone-error">Invalid phone number format</span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" required></textarea>
+                
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+                <div class="success-message" id="success-message">
+                    <p>Form submitted successfully! Thank you for contacting us.</p>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="banner.png" alt="Logo">
+            </div>
+            <div class="footer-contact">
+                <p>Email: noorbakery@gmail.com , Phone: +1 (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Noor's bakery. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

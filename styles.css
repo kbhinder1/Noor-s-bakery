@@ -1,0 +1,169 @@
+html,body{
+    height:100%;
+}
+body {
+    background-color: rgb(254, 232, 255);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px; 
+    justify-content: center;
+
+}
+.home h1 {
+
+    font-size: 45px; 
+    font-family: 'Dangrek', cursive; /* Change the font family  */
+    font-style:italic,bold; 
+    color: rgb(253, 142, 160); 
+}
+.home h2 {
+
+    font-size: 45px; 
+    font-family: 'Dangrek', cursive; /* Change the font family  */
+    font-style:italic,bold; 
+    color: rgb(208, 53, 255); 
+}
+.home p {
+    font-family: 'Dangrek', cursive;
+    font-size: 30px; 
+    color: rgb(242, 95, 185);
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+.button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-family: 'Dangrek',Cursive; 
+    font-size: 20px;
+    background-color: #c201c8a7;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none; 
+}
+.button:hover {
+    background-color: #fba2fb; 
+    color: #ffffff; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgb(254, 232, 255);
+    padding: 20px;
+}
+.product {
+    flex-basis: calc(33.33% - 20px);
+    text-align: center; 
+    flex-wrap: wrap;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border:solid#632773;
+    padding: 10px;
+    width: 100%; 
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+}
+.products-services h1 {
+    text-align: center;
+    font-family:'Dangrek',Cursive;
+    color: purple ;
+    font-size: 40px;
+}
+.products-services h2 {
+    text-align: center;
+    font-family:'Dangrek',Cursive;
+    color: rgb(255, 75, 255) ;
+    font-size: 20px;
+}
+.products-services h3{
+    font-family:'Dangrek',Cursive;
+    color: purple ;
+    font-size: 40px;
+}
+.products-services div{
+    font-family:'Dangrek',Cursive;
+    color: rgb(211, 50, 168) ;
+    font-size: 30px;
+
+}
+.product :hover {
+    transform: scale(1.05);
+}
+.product p {
+    display: none; 
+}
+.show-description {
+    display: block !important;
+}
+.contact h1{
+    font-family:'Dangrek',Cursive;
+    color: rgb(190, 15, 144) ;
+    font-size: 40px;
+    text-align: center;
+}
+.contact label{
+    font-family:'Dangrek',Cursive;
+    color: rgb(190, 15, 144) ;
+    font-size: 20px;
+    text-align: center;
+}
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background-color: #ffcfcf; 
+    color: #1e1d1d; 
+}
+main {
+    min-height: calc(100vh - (header height + footer height));
+}
+
+
+footer {
+    background-color: #fba9ff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-family:'Dangrek',Cursive;
+    color: rgb(190, 15, 144) ;
+    margin-top: auto; 
+}
+main {
+    flex-grow: 1;
+}
+.error{
+    border: 2px solid red;
+   
+}
+.error-message {
+    display: none;
+    color: red; 
+    font-size: 15px;
+}
+
+
+
+
+
